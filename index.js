@@ -24,3 +24,5 @@ db.once('open', () => {
     require('./routes/customers')(server);
     console.log(`Server started on port ${config.PORT}`)
 });
+
+module.exports = server;
